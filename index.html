@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal window</title>
+  </head>
+  <body>
+    <button class="show-modal">Click 1</button>
+    <button class="show-modal">Click 2</button>
+    <button class="show-modal">Click 3</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Pop-Up window 😍</h1>
+      <h2>This is my code 🤓</h2>
+      <p>
+        const openModal = function () { <br>
+            modal.classList.remove('hidden');<br>
+            overlay.classList.remove('hidden');<br>
+          }<br>
+
+          const closeModal = function () {<br>
+            modal.classList.add('hidden');<br>
+            overlay.classList.add('hidden');<br>
+          }<br>
+
+          
+
+          for(let i = 0 ; i < btnShowModal.length ; i++) {<br>
+            btnShowModal[i].addEventListener('click',openModal);<br>
+          }<br>
+
+        
+
+          btncloseModal.addEventListener('click',closeModal);<br>
+
+          overlay.addEventListener('click',closeModal);
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
